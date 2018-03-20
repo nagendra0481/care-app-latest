@@ -50,7 +50,7 @@ class BaseTest(unittest.TestCase):
     # setUp runs before each test case
     def setUp(self):
         self.desired_capabilities['name'] = self.id()
-        self.desired_capabilities['app'] = os.path.realpath(__file__ + "/../../../app-staging-release.apk")
+        self.desired_capabilities['app'] = os.path.realpath(__file__ + "/../../../../app-staging-release.apk")
         self.desired_capabilities['appPackage'] = 'com.stacklighting.care.staging'
         self.desired_capabilities['appActivity'] = 'com.stacklighting.stackcare.intro.splash_screen.SplashScreenActivity'    
 
